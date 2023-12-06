@@ -1,5 +1,4 @@
-let quantity;
-let pricePerDroid;
+"use strict";
 
 function makeTransaction(quantity, pricePerDroid) {
   return `"You ordered ${quantity} droids worth ${

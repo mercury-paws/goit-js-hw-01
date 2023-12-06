@@ -1,6 +1,4 @@
-let country;
-let price;
-let deliveryFee;
+"use strict";
 
 function getShippingMessage(country, price, deliveryFee) {
   return `Shipping to ${country} will cost ${price + deliveryFee} credits`;

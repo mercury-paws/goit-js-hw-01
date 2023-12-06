@@ -1,13 +1,21 @@
-let content;
-let padding;
-let border;
+"use strict";
 
+// перший варiант одразу через return
 function getElementWidth(content, padding, border) {
   return (
     Number.parseFloat(content) +
     Number.parseFloat(padding) * 2 +
     Number.parseFloat(border) * 2
   );
+}
+
+// другий варiант через const та return
+function getElementWidth(content, padding, border) {
+  const result =
+    Number.parseFloat(content) +
+    Number.parseFloat(padding) * 2 +
+    Number.parseFloat(border) * 2;
+  return result;
 }
 
 console.log(getElementWidth("50px", "8px", "4px")); // 74
